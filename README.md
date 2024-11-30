@@ -103,6 +103,24 @@ WKMsgItemViewManager.getInstance().addChatItemViewProvider(WKContentType.WK_LOCA
 ## app下载体验
 <img src='./imgs/ic_download_qr.png' width=35%/>
 
+
+
+
+
+
+用的是java21，他妈的
+需要把build.gradle全部改成21
+ compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+    kotlinOptions {
+        jvmTarget = '21'
+    }
+    这是app的build.gradle
+其他的build.gradle也全部改成21         JavaVersion.VERSION_21
+
+
 如果扫描错误可通过 [安装地址](http://www.pgyer.com/tsdd "文档") 下载
 
 ### 许可证
